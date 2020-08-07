@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/secondDialog_before_before_level_TV"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/ED_second_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="10"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_secondDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_continue"
+            />
+
+        <TextView
+            android:id="@+id/redText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRed"
+            android:layout_marginTop="10dp"
+            android:text="@string/text_continue"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

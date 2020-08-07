@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/MAL">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:layout_marginBottom="40dp"
+            android:text="@string/dialog_TV_before_before" />
+
+        <Button
+            android:id="@+id/button_N_number_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_btn1_before_before" />
+
+        <Button
+            android:id="@+id/button_dialog_all_words"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_btn2_before_before" />
+
+        <Button
+            android:id="@+id/button_dialog_choose_yourself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_btn3_before_before" />
+    </LinearLayout>
+
+</RelativeLayout>

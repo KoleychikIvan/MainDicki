@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ShowAllWordsActivity"
+    android:id="@+id/mainLL">
+
+    <ImageView
+        android:id="@+id/imageViewSheep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/sheep_black" />
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header"/>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/buttonClaerAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:text="Отчистить"/>
+
+        <FrameLayout
+            android:layout_below="@+id/buttonClaerAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+</RelativeLayout>

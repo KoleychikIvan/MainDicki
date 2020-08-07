@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="folder_text">23sp</dimen>
+    <dimen name="btn_padding_top_bottom">10sp</dimen>
+    <dimen name="btn_padding_left_right">10sp</dimen>
+    <dimen name="level3_text">2dp</dimen>
+    <dimen name="training_size">15dp</dimen>
+    <dimen name="mainPadding">10dp</dimen>
+    <dimen name="smallTextSize">16sp</dimen>
+    <dimen name="smallPadding">5dp</dimen>
+</resources>

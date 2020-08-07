@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.levels.Level4"
+    android:id="@+id/mainLL">
+    <ImageView
+        android:id="@+id/imageViewSheep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/sheep_black" />
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header"/>
+
+    <Spinner
+        android:id="@+id/spinnerLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_help" />
+
+    <TextView
+        android:id="@+id/exam_rus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerLang"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:maxLength="15"
+        android:text="Привет"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDark"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/exam_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exam_rus"
+        android:gravity="center"
+        android:maxLength="15"
+        android:text="Hello"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDark"
+        android:textSize="34sp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/microphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exam_next"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/microphone" />
+
+    <TextView
+        android:id="@+id/exam_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24sp"
+        android:gravity="center"
+        android:text="пропустить"
+        android:textColor="@color/colorBlue"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/yes"
+        android:background="@color/colorGreen50"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/yes" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRed50"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/no" />
+    </RelativeLayout>
+</RelativeLayout>

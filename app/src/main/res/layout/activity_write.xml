@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.WriteActivity"
+    android:id="@+id/mainLL">
+
+    <ImageView
+        android:id="@+id/imageViewSheep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/sheep_black" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/spinnerWrite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_all_words"
+            android:layout_marginBottom="50dp" />
+
+        <EditText
+            android:id="@+id/editEnglish"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:maxLength="40"
+            android:hint="английский" />
+
+        <EditText
+            android:id="@+id/editRussian"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="40"
+            android:hint="русский" />
+
+        <TextView
+            android:id="@+id/textViewHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/colorRed"
+            android:textSize="20sp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/buttonwrite"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Записать слово" />
+
+        <Button
+            android:id="@+id/buttonend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="перейти к тренировке" />
+
+        <TextView
+            android:id="@+id/textAllWords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Всего слов: 0"
+            android:layout_marginBottom="20dp"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/buttonallwords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="просмотреть все слова" />
+    </LinearLayout>
+
+</RelativeLayout>

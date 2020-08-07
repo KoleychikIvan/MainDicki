@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">MainDicki</string>
+    <string name="wrote">Записать слова</string>
+    <string name="training">Тренировка</string>
+    <string name="show_all">Просмотреть все слова</string>
+    <string name="shop">магазин</string>
+
+    <string name="know">Выучил</string>
+    <string name="delete">Удалить</string>
+    <string name="clear">Очистить</string>
+    <string name="text_continue">продолжить</string>
+    <string name="Sort_by_alfabet">по алфавиту</string>
+    <string name="Sort_by_date">по дате</string>
+    <string name="button_write_finish">записать</string>
+    <string name="return_level">попробовать еще раз</string>
+    <string name="mainActivity_level">выйти</string>
+    <string name="choose_another_words">выбрать другие слова</string>
+    <string name="dialog_TV_before_before">выбрате какие слова вы хотить учить</string>
+    <string name="dialog_btn1_before_before">последнее n-ое количество слов</string>
+    <string name="dialog_btn2_before_before">все слова</string>
+    <string name="dialog_btn3_before_before">выбрать самому</string>
+    <string name="secondDialog_before_before_level_TV">введите количесво слов:</string>
+
+    <string name="dialog_before_level1">вам нужно выбрать провельно слово, за каждый правильный ответ вам будет даваться 0.1 яблока</string>
+    <string name="dialog_before_level2">вам нужно составить правильный ответ из предложенных букв, за каждый правильный ответ вам будет даваться 0.25 яблока</string>
+    <string name="dialog_before_level3">вам нужно поймать все буквы, за каждый правильный ответ вам будет даваться 0.5 яблока</string>
+
+    <string name="dialog_first_time_main_activity">Привет, меня завут Дики, я буду учить вместе с тобой слова. Это главное меню сдесь вы можете выбрать, что вы хотите сделать</string>
+    <string name="dialog_first_time_write_activity">сдесь вы можете заисать слово либо словосочетание</string>
+    <string name="dialog_first_time_all_words_activity">сдесь вы можете посмотреть все слова которые вы записали</string>
+    <string name="dialog_first_time_all_phrase_activity">сдесь вы можете посмотреть все словосочетания которые вы записали</string>
+    <string name="dialog_first_time_before_before_level_activity">перед каждым уровнием вам будут даваться список слов из которых вы можете выбрать, какие вы хотите изучать</string>
+    <string name="dialog_first_time_before_level">сдесь вы можете выбрать уровень</string>
+    <string name="dialog_first_time_after_level">after_level</string>
+    <string name="dialog_first_time_exam">exam_level</string>
+    <string name="dialog_first_time_shop">shop</string>
+    <string name="dialog_info_exam">Внимание! За каждое слово будет сниматься по 1 яблоку</string>
+    <string name="dialog_allow_record">Тебе нужно разрешить пользоваться микрофоном</string>
+
+    <string name="level1_item1">"убрать одно слово "</string>
+    <string name="level3_item1">"показать одну букву "</string>
+    <string name="level3_item2">убрать лишнюю букву</string>
+    <string name="skip">пропустить</string>
+    <string name="continue_exam">желаете продолжить?</string>
+    <string name="yes">да</string>
+    <string name="no">нет</string>
+    <string name="exit">выход</string>
+    <string name="areYouSure">ты точно хочешь купит это</string>
+    <string name="todo">TODO</string>
+    <string name="havent_money">У вас не хватает яблок</string>
+
+    <string name="failedSymbol">В слове изпользуется неверный символ</string>
+    <string name="allWords">Всего слов: </string>
+
+    <!--    for shop-->
+    <string name="have_this_item">сделать активным</string>
+    <string name="buy">Купить</string>
+    <string name="level1">Уровень 1</string>
+    <string name="level2">Уровень 2</string>
+    <string name="level3">Уровень 3</string>
+    <string name="level4">Уровень 4</string>
+
+    <string name="needWriteMoreThen2Words">Нужно записать минимум 3 слова</string>
+    <string name="needChoosMoreThen2Words">Нужно выбрать минимум 3 слова</string>
+    <string name="tooMachNumber">У вас не записано столько слов</string>
+    <string name="howManyHaveHelps">подсказок осталось - </string>
+    <string name="haventHelps">Нет подсказок</string>
+    <string name="check">проверить</string>
+    <string name="setLanguage">поменять язык</string>
+
+    <string name="afterLevel0">Увы вы ничего не заработали</string>
+    <string name="afterLevelLessThen25">Поздравляю вы заработали </string>
+    <string name="afterLevelGreatingThen25">Ничего себе вы заработали </string>
+
+<!--  language name  -->
+    <string name="eng">английский</string>
+    <string name="ger">немецкий</string>
+    <string name="pln">польский</string>
+    <string name="esp">испанский</string>
+    <string name="fra">французкий</string>
+</resources>

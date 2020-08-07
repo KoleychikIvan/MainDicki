@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.levels.Level3"
+    android:id="@+id/mainLL">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layoutWithView"
+        >
+
+        <TextView
+            android:id="@+id/textViewApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageViewApple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textViewApple"
+            app:srcCompat="@drawable/apple16"
+            android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:id="@+id/FRL1"
+            style="@style/level3_frameLayout"/>
+        <FrameLayout
+            android:id="@+id/FRL2"
+            style="@style/level3_frameLayout"/>
+        <FrameLayout
+            android:id="@+id/FRL3"
+            style="@style/level3_frameLayout"/>
+        <FrameLayout
+            android:id="@+id/FRL4"
+            style="@style/level3_frameLayout"/>
+        <FrameLayout
+            android:id="@+id/FRL5"
+            style="@style/level3_frameLayout"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/word1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/LLWord"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/LLWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/text1_1"
+            style="@style/level3_text1"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/text1_2"
+            style="@style/level3_text1"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:id="@+id/text1_3"
+            style="@style/level3_text1"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/text1_4"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/text1_5"
+            style="@style/level3_text1"/>
+
+        <TextView
+            android:id="@+id/text1_6"
+            style="@style/level3_text1"/>
+
+        <TextView
+            android:id="@+id/text1_7"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/text1_8"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/text1_9"
+            style="@style/level3_text1"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/text1_10"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/text1_11"
+            style="@style/level3_text1"
+            />
+
+        <TextView
+            android:id="@+id/text1_12"
+            style="@style/level3_text1"/>
+
+        <TextView
+            android:id="@+id/text1_13"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/text1_14"
+            style="@style/level3_text1"
+            android:textAllCaps="true"/>
+        <TextView
+            android:id="@+id/text1_15"
+            style="@style/level3_text1"
+            android:textAllCaps="true" />
+    </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="100sp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRed50"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/no" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yes"
+        android:background="@color/colorGreen50"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/yes" />
+    </RelativeLayout>
+
+</RelativeLayout>
