@@ -247,11 +247,7 @@ MainActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        Toast.makeText(this, "back", Toast.LENGTH_LONG).show();
-    }
+    public void onBackPressed() {}
 
     @Override
     protected void onResume() {

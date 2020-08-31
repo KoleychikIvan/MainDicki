@@ -28,7 +28,6 @@ import com.koleychik.maindicki.ui.viewModel.ShowAllWordsViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
-import kotlin.OptIn
 
 class ShowAllWordsActivity : AppCompatActivity() {
 
@@ -82,6 +81,7 @@ class ShowAllWordsActivity : AppCompatActivity() {
                     Log.d("swipe", "swipe left")
                 }
             }
+
         }).attachToRecyclerView(rv)
 
         ItemTouchHelper(object : ItemTouchHelper.Callback() {
@@ -104,7 +104,7 @@ class ShowAllWordsActivity : AppCompatActivity() {
         }).attachToRecyclerView(rv)
     }
 
-    private fun makeDialogChange(model : WordModel) {
+    private fun makeDialogChange(model: WordModel) {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_for_replace_word)
 
