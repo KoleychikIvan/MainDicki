@@ -25,6 +25,7 @@ public class ShopActivity extends AppCompatActivity {
     TextView apple;
     SheepGoing sheepGoing = new SheepGoing(this, Keys.SHOP_FOR_SPREF, R.string.shop);
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,7 @@ public class ShopActivity extends AppCompatActivity {
         setStyle();
 
         setOnCLick();
+
     }
 
     private void setOnCLick(){
@@ -95,13 +97,10 @@ public class ShopActivity extends AppCompatActivity {
     private void setApple(){
         WorkWithApple workWithApple = new WorkWithApple(getSharedPreferences(Keys.GET_APPLE, MODE_PRIVATE));
         String appleText = workWithApple.getApple();
-        if(apple == null){
+        if(appleText == null){
             appleText = "0";
-            apple.setText(appleText);
         }
-        else {
-            apple.setText(appleText);
-        }
+        apple.setText(appleText);
     }
 
     private void init(){
@@ -118,8 +117,6 @@ public class ShopActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-
         startActivity(new Intent(ShopActivity.this, MainActivity.class));
     }
 }

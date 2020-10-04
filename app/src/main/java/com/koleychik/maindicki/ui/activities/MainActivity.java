@@ -107,6 +107,7 @@ MainActivity extends AppCompatActivity {
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                testShop.returnToMainStyle();
                 startActivity(new Intent(MainActivity.this, ShopActivity.class));
             }
         });
@@ -151,7 +152,6 @@ MainActivity extends AppCompatActivity {
                         break;
                     case R.id.btnForwardTest:
                         testShop.makeNext();
-
                         break;
                 }
             }

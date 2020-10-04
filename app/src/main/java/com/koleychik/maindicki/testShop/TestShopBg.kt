@@ -30,7 +30,7 @@ class TestShopBg(private val view : View, private val btn : Button, private val 
     }
 
     override fun makeBack(){
-        Log.d("style", mainBg.toString())
+//        Log.d("style", mainBg.toString())
 
         newNumber--
         if (newNumber < 0){
@@ -41,6 +41,7 @@ class TestShopBg(private val view : View, private val btn : Button, private val 
     }
 
     override fun mainAct(){
+        singleton.styleBg = newNumber
         if (singleton.isInSetBg(newNumber)){
             btn.setText(R.string.have_this_item)
             btn.setOnClickListener {
@@ -58,7 +59,6 @@ class TestShopBg(private val view : View, private val btn : Button, private val 
                 }
             }
         }
-        singleton.styleBg = newNumber
 
         setStyle()
     }
